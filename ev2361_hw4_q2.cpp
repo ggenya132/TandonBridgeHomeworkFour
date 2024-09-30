@@ -16,9 +16,7 @@ tuple<string, int> applyRomanDecimal(string denomination, int decimalValue) {
 
     result -= (denominationValue * divisionResult);
     string resultString = "";
-    // for (int i = 0; i < divisionResult; i++) {
-    //     resultString = resultString + denomination;
-    // }
+
     return make_tuple(string(divisionResult, denomination[0]), result);
 }
 int main() {
