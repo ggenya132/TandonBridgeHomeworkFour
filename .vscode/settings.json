@@ -3,6 +3,10 @@
     "iostream": "cpp",
     "ostream": "cpp",
     "string": "cpp",
-    "__locale": "cpp"
+    "__locale": "cpp",
+    "unordered_map": "cpp",
+    "istream": "cpp",
+    "locale": "cpp",
+    "tuple": "cpp"
   }
 }
