@@ -15,7 +15,7 @@ void printAsteriks(int numberOfAsteriks, int paddingLeftRight) {
     for (int i = 0; i < paddingLeftRight; i++) {
         result += SPACE;
     }
-    cout << result;
+    cout << result << endl;
 }
 int main() {
     int numberOfAsteriks;
@@ -26,7 +26,8 @@ int main() {
     for (int i = ((2 * numberOfAsteriks) - 1); i > 0; i -= 2) {
         printAsteriks(i, paddingPerIteration++);
     }
-    for (int i = 0; i < ((2 * numberOfAsteriks) - 1); i += 2) {
+    paddingPerIteration--;
+    for (int i = 1; i < ((2 * numberOfAsteriks)); i += 2) {
         printAsteriks(i, paddingPerIteration--);
     }
 
